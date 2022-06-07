@@ -23,6 +23,12 @@ const loop = setInterval(() => {
         mario.style.animation = 'none';
         mario.style.bottom = `${(marioPosition)}px`;
 
+        mario.src = './mariojump_images/game-over.png';
+        mario.style.width = '75px'
+        mario.style.marginLeft = '45px'
+
+        clearInterval(loop);
+        
     }
 
 }, 10);
