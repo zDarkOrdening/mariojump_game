@@ -1,122 +1,122 @@
 /* CSS Reset */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .game-board {
-    width: 100%;
-    height: 550px;
-    margin: 0 auto;
-    position: relative;
-    overflow: hidden;
-    background: linear-gradient(#87ceeb, #e0f6ff);
+  width: 100%;
+  height: 550px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(#87ceeb, #e0f6ff);
 }
 
 .floor {
-    position: absolute;
-    width: 100%;
-    height: 11.2%;
+  position: absolute;
+  width: 100%;
+  height: 11.2%;
 }
 
 .score {
-    position: absolute;
-    padding: 15px;
-    font-family: 'New Super Mario Font U', sans-serif;
+  position: absolute;
+  padding: 15px;
+  font-family: "New Super Mario Font U", sans-serif;
 }
 
 .gameOver {
-    position: absolute;
-    margin-left: auto;
-    margin-right: auto;
-    left: 0;
-    right: 0;
-    text-align: center;
-    margin-top: 8%;
-    font-size: 7vw;
-    font-family: 'New Super Mario Font U', sans-serif;
-    animation: gameOver 2s infinite linear;
-    z-index: 1;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+  margin-top: 8%;
+  font-size: 7vw;
+  font-family: "New Super Mario Font U", sans-serif;
+  animation: gameOver 2s infinite linear;
+  z-index: 1;
 }
 
 .mario {
-    width: 150px;
-    position: absolute;
-    bottom: 0;
+  width: 150px;
+  position: absolute;
+  bottom: 0;
 }
 
 .jump {
-    animation: jump 500ms ease-out;
+  animation: jump 500ms ease-out;
 }
 
 .clouds {
-    margin-top: 5%;
-    position: absolute;
-    width: 550px;
-    animation: clouds_animation 15s infinite linear;
+  margin-top: 5%;
+  position: absolute;
+  width: 550px;
+  animation: clouds_animation 15s infinite linear;
 }
 
 .pipe {
-    position: absolute;
-    bottom: 0;
-    height: 80px;
-    width: 80px;
-    animation: pipe_animation 2s infinite linear;
+  position: absolute;
+  bottom: 0;
+  height: 80px;
+  width: 80px;
+  animation: pipe_animation 2s infinite linear;
 }
 
 @keyframes gameOver {
-    0% {
-        opacity: 0;
-    }
+  0% {
+    opacity: 0;
+  }
 
-    50% {
-        opacity: 1;
-    }
+  50% {
+    opacity: 1;
+  }
 
-    100% {
-        opacity: 0;
-    }
+  100% {
+    opacity: 0;
+  }
 }
 
 @keyframes jump {
-    0% {
-        bottom: 0;
-    }
+  0% {
+    bottom: 0;
+  }
 
-    40% {
-        bottom: 180px;
-    }
+  40% {
+    bottom: 180px;
+  }
 
-    50% {
-        bottom: 180px;
-    }
+  50% {
+    bottom: 180px;
+  }
 
-    60% {
-        bottom: 180px;
-    }
+  60% {
+    bottom: 180px;
+  }
 
-    100% {
-        bottom: 0;
-    }
+  100% {
+    bottom: 0;
+  }
 }
 
 @keyframes clouds_animation {
-    from {
-        right: -45%;
-    }
+  from {
+    right: -45%;
+  }
 
-    to {
-        right: 100%;
-    }
+  to {
+    right: 100%;
+  }
 }
 
 @keyframes pipe_animation {
-    from {
-        right: -80px;
-    }
+  from {
+    right: -80px;
+  }
 
-    to {
-        right: 100%;
-    }
+  to {
+    right: 100%;
+  }
 }
